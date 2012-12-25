@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```bash
-npm install routers-news
+npm install routers-news -g
 ```
 
 Usage
@@ -16,7 +16,7 @@ Usage
 __Listing News Sources__
 
 ```bash
-node bin/routers-news.js --sources
+routers-news --sources
 ```
 
 __Outputs__
@@ -38,7 +38,7 @@ Routers News Sources:
 __Displaying Headlines__
 
 ```bash
-node bin/routers-news.js --headlines=techcrunch
+routers-news --headlines=techcrunch
 ```
 
 __Outputs__
@@ -60,7 +60,7 @@ __Outputs__
 __Loading Articles__
 
 ```bash
-node bin/routers-news.js --article=2 --source=techcrunch
+routers-news --article=2 --source=techcrunch
 ```
 
 __Outputs:__
