@@ -48,8 +48,14 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
     index = parseInt(argv.article) - 1;
 
   grabber.grabHeadlines(argv.source, function(err, headlines) {
+
     if (err) {
       console.log(err.message);
+      return;
+    }
+
+    if (!headlines[index]) {
+      console.log('headline does not exist.');
       return;
     }
 
