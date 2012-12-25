@@ -60,7 +60,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
         return;
       }
 
-      console.log('\033[1;30m' + article.title + ':\033[m\n')
+      console.log('\033[1;30m' + article.title + ':\033[m\n\n')
       console.log(article.body + '\n---------' )
       console.log('\033[32m' + headlines[index].href + '\033[m\n')
     });
