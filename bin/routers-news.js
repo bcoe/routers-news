@@ -67,7 +67,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
   });
 } else {
   console.log("Usage:\n\
-    \trouters-news --sources\tlist the news sources available\n\
+    \trouters-news --sources\tlist the news sources available.\n\
     \trouters-news --headlines=[source]\tlist the headlines for a news source.\n\
     \trouters-news --article=[id] --source=[source]\tload an article by integer id.\n\
   ")
