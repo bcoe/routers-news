@@ -13,7 +13,7 @@ npm install routers-news
 Usage
 -----
 
-Listing news sources:
+__Listing News Sources__
 
 ```bash
 # node bin/routers-news.js --sources
@@ -30,7 +30,7 @@ Routers News Sources:
     major:
 ```
 
-Displaying Headlines
+__Displaying Headlines__
 
 ```bash
 # node bin/routers-news.js --headlines=techcrunch
@@ -47,7 +47,7 @@ Displaying Headlines
     http://techcrunch.com/2012/12/24/instagram-hit-with-class-action-lawsuit-related-to-last-weeks-change-of-service-terms/
 ```
 
-Loading Articles
+__Loading Articles__
 
 ```bash
 node bin/routers-news.js --article=2 --source=techcrunch
