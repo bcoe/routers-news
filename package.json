@@ -1,0 +1,27 @@
+{
+  "name": "routers-news",
+  "directories": {
+    "lib": "./lib",
+    "bin": "./bin"
+  },
+  "main": "./lib/index.js",
+  "bin": "./bin/routers-news.js",
+  "version": "0.0.1",
+  "author": "Ben Coe <bencoe@gmail.com>",
+  "engines": [
+    "node"
+  ],
+  "description": "A crawler for various popular tech news sources. Read technology news from the comfort of your CLI.",
+  "keywords": [
+    "crawler"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bcoe/routers"
+  },
+  "dependencies": {
+    "jdistiller": ">=1.1.2",
+    "underscore": ">=1.4.2",
+    "optimist": ">=0.3.4"
+  }
+}
