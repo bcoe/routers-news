@@ -32,7 +32,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
 } else if (argv.headlines) { // List the headlines for a source.
   var grabber = new Grabber();
 
-  grabber.grabHeadlines((argv.headlines || argv.source), function(err, headlines) {
+  grabber.grabHeadlines((argv.source || argv.headlines), function(err, headlines) {
     if (err) {
       console.log(err.message);
       return;
