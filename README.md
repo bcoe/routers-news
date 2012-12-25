@@ -16,7 +16,7 @@ Usage
 __Listing News Sources__
 
 ```bash
-# node bin/routers-news.js --sources
+node bin/routers-news.js --sources
 
 Routers News Sources:
 
@@ -33,7 +33,8 @@ Routers News Sources:
 __Displaying Headlines__
 
 ```bash
-# node bin/routers-news.js --headlines=techcrunch
+ node bin/routers-news.js --headlines=techcrunch
+
 [1] China Now Has 1.104B Mobile Users, While Mobile Communications Revenue Totaled $116.26B Over First 11 Months of 2012
     http://techcrunch.com/2012/12/24/china-now-has-1-104b-mobile-users-while-mobile-communications-revenue-totaled-116-26b-over-first-11-months-of-2012/
 
@@ -51,6 +52,7 @@ __Loading Articles__
 
 ```bash
 node bin/routers-news.js --article=2 --source=techcrunch
+
 TechCrunch Crunched: Exposing The Latest Tech Trends:
 
 Editor’s note: Yvo Schaap is a 27-year-old entrepreneur from Amsterdam who loves data and code. He’s founder of Directlyrics.com and Fanity.com and has been featured on TechCrunch regarding major security holes or new Google and Facebook products. Follow him on Twitter @yvoschaap.
