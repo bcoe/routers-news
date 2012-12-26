@@ -59,7 +59,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
       return;
     }
 
-    grabber.grabArticle(argv.source, headlines[index].href, function(err, article) {
+    grabber.grabArticle(argv.source, headlines[index], function(err, article) {
       
       if (err) {
         console.log(err.message);
