@@ -15,7 +15,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
     }];
 
   while (categories.length) {
-    var category = categories.shift();
+    var category = categories.pop();
     console.log(category.indent + category.name)
     Object.keys(category.data).forEach(function(key) {
       if (category.data[key] instanceof Source) {
