@@ -128,6 +128,16 @@ A crawler for various popular tech news sources. Read technology news from the c
 https://github.com/bcoe/routers-news
 ```
 
+The Crawlers
+----------
+
+The news crawlers used by Routers come in two varieties:
+
+* Page scrapers which use CSS selectors to extract content from news sources.
+* RSS/Atom feed parsers, which crawl articles using an RSS or Atom news feed.
+
+Examples of both can be found in the __lib/sources__ directory.
+
 Contributing
 ----------
 
