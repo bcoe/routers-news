@@ -29,7 +29,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
       }
     });
   }
-} else if (argv.headlines) { // List the headlines for a source.
+} else if (argv.source && !argv.article) { // List the headlines for a source.
   var grabber = new Grabber();
 
   grabber.grabHeadlines((argv.source || argv.headlines), function(err, headlines) {
@@ -75,7 +75,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
 } else {
   console.log("Usage:\n\
     \trouters-news --sources\tlist the news sources available.\n\
-    \trouters-news --headlines=[source]\tlist the headlines for a news source.\n\
-    \trouters-news --article=[id] --source=[source]\tload an article by integer id.\n\
+    \trouters-news --source=[source]\tlist the headlines for a news source.\n\
+    \trouters-news --source=[source] --article=[id]\tload an article by integer id.\n\
   ")
 }

@@ -6,7 +6,7 @@
   },
   "main": "./lib/index.js",
   "bin": "./bin/routers-news.js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Ben Coe <bencoe@gmail.com>",
   "engines": [
     "node"
