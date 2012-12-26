@@ -40,17 +40,19 @@ routers-news --sources
 __Outputs__
 
 ```bash
-
 Routers News Sources:
 
+  news:
+    major:
+      NewYorkTimes: The New York Times Bits blog.
+      LATimes: The business and culture of our digital lives, from the L.A. Times.
+      USAToday: Power up with breaking news on personal technology, electronics, gaming and computers.
+    tech:
+      Wired.com: Wired magazine is a monthly US technology publication.
+      ArsTechnica: Ars Technica is a technology news site catering to PC enthusiasts.
+      TechCrunch: A network of technology-oriented blogs and other web properties.
   other:
     Github: Trending and featured repos on Github.com
-  news:
-  blogs:
-    tech:
-      TechCrunch: A network of technology-oriented blogs and other web properties.
-      Wired.com: Wired magazine is a monthly US technology publication.
-    major:
 ```
 
 __Displaying Headlines__
@@ -118,7 +120,7 @@ Contributing
 It's easy to add a new news source:
 
 * fork the routers news repo.
-* check it out locally (git clone git@github.com:your-username/routers-news.git).
+* clone it locally.
 * run __npm install__ to install the libraries locally.
 * create a new crawler in the __lib/sources__ directory (everything in this hierarchy is automatically loaded).
 * to test your crawler run: __node ./bin/routers-news.js__.
