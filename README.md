@@ -10,9 +10,10 @@ It Currently Supports:
 * New York Times.
 * Ars Technica
 * USA Today
+* L.A. Times
 * TechCrunch
 * Wired.com
-* Github (featured/popular libraries)
+* Github
 
 It's Also An Experiment
 ------------
@@ -67,7 +68,7 @@ __Outputs__
 [2] TechCrunch Crunched: Exposing The Latest Tech Trends
     http://techcrunch.com/2012/12/24/techcrunch-crunched-exposing-the-latest-tech-trends/
 
-[3] Singaporean Maritime Tech Firm Ascenz Gets $482K In Funding From Red Dot Ventures As It Sails Toward The Chinese Market
+[3] Singaporean Maritime Tech Firm Ascenz Gets 482K In Funding From Red Dot Ventures As It Sails Toward The Chinese Market
     http://techcrunch.com/2012/12/24/singaporean-maritime-tech-firm-ascenz-gets-482k-in-funding-from-red-dot-ventures-as-it-sails-toward-the-chinese-market/
 
 [4] Instagram Hit With Class Action Lawsuit Related To Last Week’s Change Of Service Terms
