@@ -7,7 +7,7 @@ It exposes a command-line interface to these crawlers, allowing for the distingu
 
 It Currently Supports:
 
-* New York Times.
+* New York Times
 * Ars Technica
 * USA Today
 * L.A. Times
@@ -56,44 +56,85 @@ Routers News Sources:
 __Displaying Headlines__
 
 ```bash
-routers-news --headlines=techcrunch
+routers-news --headlines=github
 ```
 
 __Outputs__
 
 ```bash
-[1] China Now Has 1.104B Mobile Users, While Mobile Communications Revenue Totaled $116.26B Over First 11 Months of 2012
-    http://techcrunch.com/2012/12/24/china-now-has-1-104b-mobile-users-while-mobile-communications-revenue-totaled-116-26b-over-first-11-months-of-2012/
+routers-news --headlines=github
+[1] MacLemon / CongressChecklist
+  https://github.com/MacLemon/CongressChecklist
 
-[2] TechCrunch Crunched: Exposing The Latest Tech Trends
-    http://techcrunch.com/2012/12/24/techcrunch-crunched-exposing-the-latest-tech-trends/
+[2] dejan / rails_panel
+  https://github.com/dejan/rails_panel
 
-[3] Singaporean Maritime Tech Firm Ascenz Gets 482K In Funding From Red Dot Ventures As It Sails Toward The Chinese Market
-    http://techcrunch.com/2012/12/24/singaporean-maritime-tech-firm-ascenz-gets-482k-in-funding-from-red-dot-ventures-as-it-sails-toward-the-chinese-market/
+[3] feross / md5-password-cracker.js
+  https://github.com/feross/md5-password-cracker.js
 
-[4] Instagram Hit With Class Action Lawsuit Related To Last Week’s Change Of Service Terms
-    http://techcrunch.com/2012/12/24/instagram-hit-with-class-action-lawsuit-related-to-last-weeks-change-of-service-terms/
+[4] shadowsocks / shadowsocks-go
+  https://github.com/shadowsocks/shadowsocks-go
+
+[5] bcoe / routers-news
+  https://github.com/bcoe/routers-news
+
+[6] andrew / 24pullrequests
+  https://github.com/andrew/24pullrequests
+
+[7] nkohari / jwalk
+  https://github.com/nkohari/jwalk
+
+[8] lockitron / selfstarter
+  https://github.com/lockitron/selfstarter
+
+[9] twitter / bower
+  https://github.com/twitter/bower
+
+[10]  Spaceman-Labs / SMPageControl
+  https://github.com/Spaceman-Labs/SMPageControl
 ```
 
 __Loading Articles__
 
 ```bash
-routers-news --article=2 --source=techcrunch
+routers-news --article=5 --source=github
 ```
 
 __Outputs:__
 
 ```bash
+bcoe / routers-news:
 
-TechCrunch Crunched: Exposing The Latest Tech Trends:
 
-Editor’s note: Yvo Schaap is a 27-year-old entrepreneur from Amsterdam who loves data and code. He’s founder of Directlyrics.com and Fanity.com and has been featured on TechCrunch regarding major security holes or new Google and Facebook products. Follow him on Twitter @yvoschaap.
+A crawler for various popular tech news sources. Read technology news from the comfort of your CLI.
+      — Read more
 ---------
-http://techcrunch.com/2012/12/24/techcrunch-crunched-exposing-the-latest-tech-trends/
+https://github.com/bcoe/routers-news
 ```
 
-Contribute Why Don't You?
-------------------
+Contributing
+----------
 
-* Tell us when crawlers are broken.
-* Submit new crawlers (look in the sources directory, they're super easy to write.)
+It's easy to add a new news source:
+
+* fork the routers news repo.
+* check it out locally (git clone git@github.com:your-username/routers-news.git).
+* run __npm install__ to install the libraries locally.
+* create a new crawler in the __lib/sources__ directory (everything in this hierarchy is automatically loaded).
+* to test your crawler run: __node ./bin/routers-news.js__.
+
+You can also help a ton by:
+
+* reporting when crawlers are broken.
+* extending on the crawelrs, I'd love to have:
+  * Dates.
+  * Authors.
+  * Better image extraction.
+* improving on the CLI client.
+
+Help make our dreams of a collaborative web-crawler a reality :)
+
+Copyright
+---------
+
+Copyright (c) 2012 Benjamin Coe and Joshua Hull and Gabriel Silk. See LICENSE.txt for further details.
