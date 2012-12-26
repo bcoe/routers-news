@@ -5,10 +5,19 @@ Routers is a collection of web-crawlers for various popular technology news sour
 
 It exposes a command-line interface to these crawlers, allowing for the distinguishing tech-news enthusiast to avoid leaving the comfort of their terminal.
 
+It Currently Supports:
+
+* New York Times.
+* Ars Technica
+* USA Today
+* Wired.com
+* Github (featured/popular libraries)
+
 It's Also An Experiment
 ------------
 
 It is my hope that, by open-sourcing a collection of news scrapers, a community can be built around building a powerful set of real-time news aggregation tools.
+
 
 Installation
 ------------
