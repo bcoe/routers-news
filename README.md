@@ -10,6 +10,7 @@ It Currently Supports:
 * New York Times.
 * Ars Technica
 * USA Today
+* TechCrunch
 * Wired.com
 * Github (featured/popular libraries)
 
