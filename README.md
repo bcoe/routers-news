@@ -7,13 +7,26 @@ It exposes a command-line interface to these crawlers, allowing for the distingu
 
 It Currently Supports:
 
-* New York Times
+__Technology News Sources__
 * Ars Technica
+* Wired.com
+
+__Technology Blogs__
+
+* TechCrunch
+* Mashable
+
+__Mainstream News Sources__
+
+* New York Times
 * USA Today
 * L.A. Times
-* TechCrunch
-* Wired.com
+
+__Other Random Stuff__
+
 * Github
+
+_(this categorization is loose, please feel free to shuffle stuff around.)_
 
 It's Also An Experiment
 ------------
