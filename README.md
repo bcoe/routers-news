@@ -25,6 +25,8 @@ __Mainstream News Sources__
 __Other Random Stuff__
 
 * Github
+* The Oatmeal
+* xkcd
 
 _(this categorization is loose, please feel free to shuffle stuff around.)_
 
