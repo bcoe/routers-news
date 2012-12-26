@@ -73,13 +73,12 @@ Routers News Sources:
 __Displaying Headlines__
 
 ```bash
-routers-news --headlines=github
+routers-news --source=github
 ```
 
 __Outputs__
 
 ```bash
-routers-news --headlines=github
 [1] MacLemon / CongressChecklist
   https://github.com/MacLemon/CongressChecklist
 
@@ -114,7 +113,7 @@ routers-news --headlines=github
 __Loading Articles__
 
 ```bash
-routers-news --article=5 --source=github
+routers-news --source=github --article=5
 ```
 
 __Outputs:__
