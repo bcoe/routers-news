@@ -25,7 +25,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
           name: '\033[32m' + key + ':\033[m',
           data: category.data[key],
           indent: category.indent + '  '
-        })
+        });
       }
     });
   }
@@ -40,7 +40,7 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
 
     for (var i = 0, headline; (headline = headlines[i]) != null; i++) {
       console.log('[' + (i + 1) + ']\t' + headline.title);
-      console.log('\t\033[32m' + headline.href + '\033[m\n')
+      console.log('\t\033[32m' + headline.href + '\033[m\n');
     }
   });
 } else if (argv.article) {
@@ -66,10 +66,16 @@ if (argv.sources) { // Display al lthe news sources Routers currently parses.
         return;
       }
 
-      console.log('\033[1;30m' + article.title + ':\033[m')
-      if (article.img) console.log('\n[' + article.img + ']')
-      console.log('\n' + article.body + '\n---------' )
-      console.log('\033[32m' + headlines[index].href + '\033[m\n')
+      if (argv.output === 'json') {
+        article.href = headlines[index].href;
+        console.log(JSON.stringify(article));
+      } else {
+        console.log('\033[1;30m' + article.title + ':\033[m');
+        if (article.img) console.log('\n[' + article.img + ']');
+        console.log('\n' + article.body + '\n---------' );
+        console.log('\033[32m' + headlines[index].href + '\033[m\n');
+      }
+
     });
   });
 } else {
