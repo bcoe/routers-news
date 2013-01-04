@@ -9,7 +9,7 @@ var exec = require('child_process').exec,
 var argv = optimist
   .options('S', {
     alias: 'sources',
-    describe: 'List sources'
+    describe: 'List news sources'
   })
   .options('s', {
     alias: 'source',
@@ -27,6 +27,11 @@ var argv = optimist
     alias: 'open',
     describe: 'open the article in your browser'
   })
+  .usage("Usage:\n\
+    \trouters-news --sources\tlist the news sources available.\n\
+    \trouters-news --source=[source]\tlist the headlines for a news source.\n\
+    \trouters-news --source=[source] --article=[id]\tload an article by integer id.\n\
+  ")
   .argv;
 
 var actions = {
@@ -63,15 +68,21 @@ function sources () {
 function listArticles (source) {
   var grabber = new Grabber();
 
-  grabber.grabHeadlines((source), function(err, headlines) {
+  grabber.grabHeadlines(source, function(err, headlines) {
     if (err) {
       console.log(err.message);
       return;
     }
 
-    for (var i = 0, headline; (headline = headlines[i]) != null; i++) {
-      console.log('[' + (i + 1) + ']\t' + headline.title);
-      console.log('\t\033[32m' + headline.href + '\033[m\n');
+    if (argv.output === 'json') {
+      console.log(JSON.stringify(headlines));
+    } else {
+
+      for (var i = 0, headline; (headline = headlines[i]) != null; i++) {
+        console.log('[' + (i + 1) + ']\t' + headline.title);
+        console.log('\t\033[32m' + headline.href + '\033[m\n');
+      }
+
     }
   });
 }
@@ -101,6 +112,7 @@ function showArticle (source, index) {
 
       article.href = headlines[index].href;
 
+      // open the article using the CLI's default action.
       if (argv.open) {
         var command = 'open ' + article.href;
         console.log(command);
@@ -143,11 +155,5 @@ if (argv.sources) {
   return actions.article(argv.source, argv.article);
 
 } else {
-
-  console.log("Usage:\n\
-    \trouters-news --sources\tlist the news sources available.\n\
-    \trouters-news --source=[source]\tlist the headlines for a news source.\n\
-    \trouters-news --source=[source] --article=[id]\tload an article by integer id.\n\
-  ");
-
+  console.log(optimist.help());
 }
