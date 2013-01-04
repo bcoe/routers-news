@@ -11,10 +11,14 @@ __Technology News Sources__
 * Ars Technica
 * Wired.com
 
-__Technology Blogs__
+__Major Technology Blogs__
 
 * TechCrunch
 * Mashable
+
+__Personal Technology Blogs__
+
+* Codes From The Underground, my blog
 
 __Mainstream News Sources__
 
