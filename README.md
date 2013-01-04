@@ -15,6 +15,7 @@ __Major Technology Blogs__
 
 * TechCrunch
 * Mashable
+* Gizmodo
 
 __Personal Technology Blogs__
 
