@@ -16,6 +16,8 @@ __Major Technology Blogs__
 * TechCrunch
 * Mashable
 * Gizmodo
+* FastCompany
+* Fast Co.Labs
 
 __Personal Technology Blogs__
 
